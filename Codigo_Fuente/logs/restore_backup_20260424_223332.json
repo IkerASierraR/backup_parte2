@@ -1,0 +1,12 @@
+[
+  {
+    "timestamp": "2026-04-24T22:33:32.898369",
+    "level": "INFO",
+    "message": "[RestoreBackupUseCase] Restaurando 'C:/Users/ID/Downloads/AdventureWorksLT2025.bak' \u2192 'AdventureWorksLT2025_SAFEBRIDGE_20260424223332'"
+  },
+  {
+    "timestamp": "2026-04-24T22:33:32.935578",
+    "level": "ERROR",
+    "message": "[RestoreBackupUseCase] Error al restaurar: ('42000', \"[42000] [Microsoft][ODBC Driver 18 for SQL Server][SQL Server]No se puede abrir el dispositivo de copia de seguridad 'C:/Users/ID/Downloads/AdventureWorksLT2025.bak'. Error de sistema operativo 5(Acceso denegado.). (3201) (SQLExecDirectW); [42000] [Microsoft][ODBC Driver 18 for SQL Server][SQL Server]Fin an\u00f3malo de RESTORE FILELIST. (3013)\")"
+  }
+]
