@@ -1,0 +1,14 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SQL-SafeBridge</title><link rel="stylesheet" href="styles.css"></head>
+<body class="dark"><div id="app">
+<header><h1>SQL-SafeBridge</h1><button id="themeBtn">🌙/☀️</button></header>
+<section id="login" class="card">
+<h2>Conexión</h2><input id="server" placeholder="Servidor"><label><input type="checkbox" id="winAuth" checked> Windows Auth</label>
+<input id="user" placeholder="Usuario"><input id="pass" type="password" placeholder="Contraseña"><button id="connectBtn">Conectar</button>
+</section>
+<section id="main" class="hidden">
+<div class="grid"><div class="card"><h3>Respaldo</h3><select id="dbSelect"></select><input id="backupDir" placeholder="Ruta backups"><button id="backupBtn">Ejecutar backup + validación</button></div>
+<div class="card"><h3>Restauración</h3><input id="bakPath" placeholder="Archivo .bak" readonly><button id="pickBakBtn">Seleccionar .bak</button><input id="targetDb" placeholder="Nombre destino (opcional)"><button id="restoreBtn">Restaurar</button></div>
+<div class="card"><h3>Ajustes</h3><p>Tema guardado en localStorage</p></div></div>
+<div class="card"><h3>Actividad</h3><div id="progress"><div id="bar"></div></div><pre id="logs"></pre></div>
+</section></div><script src="renderer.js"></script></body></html>
